@@ -139,8 +139,13 @@ text-transform: uppercase;
 
 /* team */
 
-.team .team-title {   
+.team-card {
     background-color: var(--main-bg-color);
+    width: 270px;
+    height: 368px;
+}
+
+.team .team-title {   
     font-weight: 500;
     font-size: 16px;
     line-height: 1.19;
@@ -148,7 +153,6 @@ text-transform: uppercase;
 
 .team .team-list {
     color: var(--primary-text-color);
-    background-color: var(--main-bg-color);
     font-weight: normal;
     font-size: 16px;
     line-height: 1.19;
@@ -166,6 +170,11 @@ text-transform: uppercase;
     font-weight: 400;
     font-size: 14px;
     line-height: 1.71;
+}
+
+.address .title:hover,
+.address .title:focus {
+    color: var(--accent-color);
 }
 
 .address .item {
@@ -212,4 +221,7 @@ font-weight: normal;
 font-size: 16px;
 line-height: 1.88;
 }
+
+
+
 

@@ -98,6 +98,7 @@ text-decoration: none;
 /* button */
 
 .button {
+ font-family: inherit;
 color: var(--main-bg-color);
 background-color: var(--accent-color);
 font-weight: bold;
@@ -196,6 +197,7 @@ text-decoration: none;
 /* butttons filtr */
 
 .botton-filter {
+font-family: inherit;
 color: var(--title-text-color);
 background-color: var(--primary-bg-color);
 font-weight: 500;

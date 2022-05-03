@@ -2,18 +2,22 @@
 --primary-text-color: #757575;
 --title-text-color: #212121;
 --accent-color: #2196F3;
---background-black: #2F303A;
---primary-bg-color: #FFFFFF;
+--background-black-color: #2F303A;
+--main-bg-color: #FFFFFF;
+--primary-bg-color: #F5F4FA;
 }
+ 
+/* body */
 
 body {
     color: var(--title-text-color);
+    background-color: var(--main-bg-color);
     font-family: 'Roboto',
     sans-serif;
     font-style: normal;
     letter-spacing: 0.03em;
-
 }
+
 /* Цвет основного текста #212121; */
 /* цвет вторичный #757575 */
 /* цвет линка #2196F3 + #000000  */
@@ -25,9 +29,11 @@ ul {
     list-style: none;
 }
 
-/* логотип */
+/* logo */
+
 .logo {
 color: var(--accent-color);
+font-weight: bold;
 font-family: 'Raleway',
 sans-serif;
 font-size: 26px;
@@ -40,7 +46,7 @@ text-decoration: none;
 }
 
 .logo-footer {
-    color: var(--primary-bg-color);
+    color: var(--main-bg-color);
 }
 
 /* site nav */
@@ -57,6 +63,7 @@ text-decoration: none;
 .site-nav .link:hover, .site-nav .link:focus {
     color: var(--accent-color);
 }
+/* contacts */
 
 .contacts .link {
     color: var(--primary-text-color);
@@ -72,17 +79,14 @@ text-decoration: none;
     color: var(--accent-color);
 }
 
-
-
 /* hero */
 
 .hero {
-    background: var(--background-black);
+    background: var(--background-black-color);
 }
 
 .hero-title {
-    color: var(--primary-bg-color);
-    font-style: normal;
+    color: var(--main-bg-color);
     font-weight: 900;
     font-size: 44px;
     line-height: 1.36;
@@ -94,43 +98,49 @@ text-decoration: none;
 /* button */
 
 .button {
-color: var(--primary-bg-color);
+color: var(--main-bg-color);
 background-color: var(--accent-color);
-font-weight: 700;
+font-weight: bold;
 font-size: 16px;
 line-height: 1,88;
 letter-spacing: 0.06em;
+cursor: pointer;
 }
 
 
  /* section */
 
  .section-team {
-     background-color: #F5F4FA;
+     background-color: var(--primary-bg-color);
  }
 
 .section-title {
-    color: var(--title-text-color);
+    font-weight: bold;
+    font-size: 36px;
+    line-height: 1.17;
+    text-align: center;
 }
 
 /* features */
 
 .feature-list .title {
-
+font-weight: bold;
+font-size: 14px;
+line-height: 1.14;
+text-transform: uppercase;
 }
 
 .feature-list .title-list {
     color: var(--primary-text-color);
-    font-weight: 400;
+    font-weight: normal;
     font-size: 14px;
     line-height: 1.71;
 }
 
-/* work */
+/* team */
 
-.team .team-title {
-    color: var(--title-text-color);
-    background-color: #FFFFFF;
+.team .team-title {   
+    background-color: var(--main-bg-color);
     font-weight: 500;
     font-size: 16px;
     line-height: 1.19;
@@ -138,8 +148,8 @@ letter-spacing: 0.06em;
 
 .team .team-list {
     color: var(--primary-text-color);
-    background-color: #FFFFFF;
-    font-weight: 400;
+    background-color: var(--main-bg-color);
+    font-weight: normal;
     font-size: 16px;
     line-height: 1.19;
 }
@@ -147,11 +157,11 @@ letter-spacing: 0.06em;
 /* footer */
 
 .page-footer {
-    background-color: var(--background-black);
+    background-color: var(--background-black-color);
 }
 
 .address .title {
-    color: var(--primary-bg-color);
+    color: var(--main-bg-color);
     font-style: normal;
     font-weight: 400;
     font-size: 14px;
@@ -161,33 +171,36 @@ letter-spacing: 0.06em;
 .address .item {
 color: rgba(255, 255, 255, 0.6);
 font-style: normal;
-font-weight: 400;
+font-weight: normal;
 font-size: 14px;
 line-height: 1.71;
 text-decoration: none;
 }
 
+.address .item:hover,
+.address .item:focus {
+    color: var(--accent-color);
+}
+
 /* portfolio */
 
-.portfolio {
+/* butttons filtr */
 
-}
-.botton-filtr {
+.botton-filter {
 color: var(--title-text-color);
-background-color: #F5F4FA;
+background-color: var(--primary-bg-color);
 font-weight: 500;
 font-size: 16px;
 line-height: 1.62;
+cursor: pointer;
 } 
-.botton-filtr:hover, .botton-filtr:focus {
-    color: var(--primary-bg-color);
+.botton-filter:hover, .botton-filter:focus {
+    color: var(--main-bg-color);
     background-color: var(--accent-color);
 }
 
-
 .portfolio-list .title {
-    color: var(--title-text-color);
-    font-weight: 700;
+    font-weight: bold;
     font-size: 18px;
     line-height: 2;
     letter-spacing: 0.06em;
@@ -195,8 +208,7 @@ line-height: 1.62;
 
 .portfolio-list .list {
 color: var(--primary-text-color);
-font-style: normal;
-font-weight: 400;
+font-weight: normal;
 font-size: 16px;
 line-height: 1.88;
 }

@@ -33,7 +33,7 @@ ul {
 
 .logo {
 color: var(--accent-color);
-font-weight: bold;
+font-weight: 700;
 font-family: 'Raleway',
 sans-serif;
 font-size: 26px;
@@ -49,10 +49,18 @@ text-decoration: none;
     color: var(--main-bg-color);
 }
 
-/* site nav */
+/* site nav, contacts */
 
 .site-nav .link {
-color: var(--title-text-color);
+    color: var(--title-text-color);
+}
+
+.contacts .link {
+    color: var(--primary-text-color);
+}
+
+.site-nav .link,
+.contacts .link {
 font-weight: 500;
 font-size: 14px;
 line-height: 1.14;
@@ -60,20 +68,8 @@ letter-spacing: 0.02em;
 text-decoration: none;
 }
 
-.site-nav .link:hover, .site-nav .link:focus {
-    color: var(--accent-color);
-}
-/* contacts */
-
-.contacts .link {
-    color: var(--primary-text-color);
-    font-weight: 500;
-    font-size: 14px;
-    line-height: 1.14;
-    letter-spacing: 0.02em;
-    text-decoration: none;
-}
-
+.site-nav .link:hover,
+.site-nav .link:focus, 
 .contacts .link:hover,
 .site-nav .link:focus {
     color: var(--accent-color);
@@ -98,10 +94,10 @@ text-decoration: none;
 /* button */
 
 .button {
- font-family: inherit;
+font-family: inherit;
 color: var(--main-bg-color);
 background-color: var(--accent-color);
-font-weight: bold;
+font-weight: 700;
 font-size: 16px;
 line-height: 1,88;
 letter-spacing: 0.06em;
@@ -116,7 +112,7 @@ cursor: pointer;
  }
 
 .section-title {
-    font-weight: bold;
+    font-weight: 700;
     font-size: 36px;
     line-height: 1.17;
     text-align: center;
@@ -125,7 +121,7 @@ cursor: pointer;
 /* features */
 
 .feature-list .title {
-font-weight: bold;
+font-weight: 700;
 font-size: 14px;
 line-height: 1.14;
 text-transform: uppercase;
@@ -133,7 +129,7 @@ text-transform: uppercase;
 
 .feature-list .title-list {
     color: var(--primary-text-color);
-    font-weight: normal;
+    font-weight: 400;
     font-size: 14px;
     line-height: 1.71;
 }
@@ -154,7 +150,7 @@ text-transform: uppercase;
 
 .team .team-list {
     color: var(--primary-text-color);
-    font-weight: normal;
+    font-weight: 400;
     font-size: 16px;
     line-height: 1.19;
 }
@@ -165,28 +161,25 @@ text-transform: uppercase;
     background-color: var(--background-black-color);
 }
 
-.address .title {
-    color: var(--main-bg-color);
+.address .title,
+.address .item {
     font-style: normal;
     font-weight: 400;
     font-size: 14px;
     line-height: 1.71;
+    text-decoration: none;
 }
 
-.address .title:hover,
-.address .title:focus {
-    color: var(--accent-color);
+.address .title {
+    color: var(--main-bg-color);
 }
 
 .address .item {
-color: rgba(255, 255, 255, 0.6);
-font-style: normal;
-font-weight: normal;
-font-size: 14px;
-line-height: 1.71;
-text-decoration: none;
+    color: rgba(255, 255, 255, 0.6);
 }
 
+.address .title:hover,
+.address .title:focus,
 .address .item:hover,
 .address .item:focus {
     color: var(--accent-color);
@@ -211,7 +204,7 @@ cursor: pointer;
 }
 
 .portfolio-list .title {
-    font-weight: bold;
+    font-weight: 700;
     font-size: 18px;
     line-height: 2;
     letter-spacing: 0.06em;
@@ -219,7 +212,7 @@ cursor: pointer;
 
 .portfolio-list .list {
 color: var(--primary-text-color);
-font-weight: normal;
+font-weight: 400;
 font-size: 16px;
 line-height: 1.88;
 }
